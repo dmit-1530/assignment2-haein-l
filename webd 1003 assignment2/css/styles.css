@@ -16,6 +16,7 @@ body {
 .flex-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header {
@@ -33,12 +34,48 @@ nav ul {
     justify-content: space-between;
     gap: 1.875rem;
     color: #000000;
-    text-decoration: none;
+    list-style: none;
 }
 
-header:last-child a  {
+header a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .flex-container>a:last-of-type {
     background-color: var(--primary-rose);
     padding: 0.75rem 1rem;
     text-decoration: none;
     color: var(--off-white);
 }
+
+section .flex-container {
+    background-color: var(--secondary-blue);
+    color: var(--off-white);
+    padding: 5.063rem 6.313rem;
+    justify-content: space-between;
+    text-align: left;
+    gap: 2.125rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.688rem;
+    line-height: 100%;
+    font-weight: bold;
+    max-width: 18.875rem;
+}
+
+section .flex-container a {
+    color: var(--off-white);
+    text-decoration: none;
+    border:1px solid var(--off-white);
+    padding: 0.75rem 1rem;
+}
+
+section .flex-container p {
+    font-size: 2rem;
+    line-height: 150%;
+    max-width: 60.875rem;
+}
+
