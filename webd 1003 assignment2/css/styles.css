@@ -49,7 +49,7 @@ header .flex-container>a:last-of-type {
     color: var(--off-white);
 }
 
-section .flex-container {
+section>.flex-container:first-of-type {
     background-color: var(--secondary-blue);
     color: var(--off-white);
     padding: 5.063rem 6.313rem;
@@ -69,7 +69,7 @@ h1 {
 section .flex-container a {
     color: var(--off-white);
     text-decoration: none;
-    border:1px solid var(--off-white);
+    border: 1px solid var(--off-white);
     padding: 0.75rem 1rem;
 }
 
@@ -79,3 +79,84 @@ section .flex-container p {
     max-width: 60.875rem;
 }
 
+section>.flex-container:nth-of-type(2) {
+    background-color: #F1F5F9;
+    padding: 5.0625rem 3.75rem 5.0625rem 6.3125rem;
+    gap: 4.688rem;
+}
+
+.flex-container section {
+    background-color: var(--white);
+}
+
+.flex-container .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.375rem;
+    max-width: 53.875rem;
+    text-align: left;
+}
+
+.flex-container .flex-container section {
+    width: 100%;
+}
+
+.flex-container .flex-container a {
+    color: var(--primary-rose);
+    text-decoration: underline;
+}
+
+.text-wrap h2 {
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+.flex-container .text-wrap p {
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+
+.text-wrap {
+    padding: 1.688rem;
+}
+
+.text-wrap ul {
+    list-style: none;
+    justify-content: center;
+}
+
+.flex-container .text-wrap div {
+    max-width: 31.188rem;
+}
+
+div.text-wrap:first-of-type {
+    gap: 2.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container .flex-container section:nth-of-type(3) a {
+    padding: 0;
+}
+
+.flex-container .games {
+    text-align: center;
+    max-width: 25.875rem;
+}
+
+.games h2 {
+    max-width: 22.5rem;
+    white-space: nowrap;
+    margin-bottom: 3.375rem;
+}
+
+footer {
+    background-color: var(--tertiary-navy);
+    color: var(--off-white);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 3.375rem 11.813rem;
+    gap: 2.125rem;
+}
