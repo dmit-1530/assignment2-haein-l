@@ -1,7 +1,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    --primary-rose: #BD3A5A;
+    --primary-red: #BD3A5A;
     --off-white: #F8FAFC;
     --secondary-blue: #005A8F;
     --tertiary-navy: #002439;
@@ -16,12 +16,16 @@ body {
 .flex-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 header {
     margin-left: 6.313rem;
     margin-right: 6.313rem;
+}
+
+header .flex-container,
+section .flex-container:first-of-type {
+    align-items: center;
 }
 
 header:first-of-type a {
@@ -42,8 +46,12 @@ header a {
     color: var(--black);
 }
 
+header .flex-container>a:last-of-type:hover {
+    background-color: var(--hover-red);
+}
+
 header .flex-container>a:last-of-type {
-    background-color: var(--primary-rose);
+    background-color: var(--primary-red);
     padding: 0.75rem 1rem;
     text-decoration: none;
     color: var(--off-white);
@@ -102,9 +110,14 @@ section>.flex-container:nth-of-type(2) {
 }
 
 .flex-container .flex-container a {
-    color: var(--primary-rose);
+    color: var(--primary-red);
     text-decoration: underline;
 }
+
+.text-wrap a:hover {
+    color: var(--hover-red);
+}
+
 
 .text-wrap h2 {
     font-size: 2.25rem;
@@ -143,13 +156,26 @@ div.text-wrap:first-of-type {
 .flex-container .games {
     text-align: center;
     max-width: 25.875rem;
+    max-height: 50.063rem;
 }
 
-.games h2 {
+.flex-container .games h2 {
     max-width: 22.5rem;
     white-space: nowrap;
     margin-bottom: 3.375rem;
 }
+
+.games ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.375rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 footer {
     background-color: var(--tertiary-navy);
